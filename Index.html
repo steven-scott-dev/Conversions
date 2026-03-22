@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaden Grace Digital</title>
 
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  background: orange;
+  padding: 15px 25px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+  
+
+.floating-call {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  padding: 15px;
+  border-radius: 50px;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero container">
+  <h1>Websites That Turn Visitors Into Customers</h1>
+  <p>Stop losing leads. Get more calls, bookings, and real business.</p>
+  <a href="#contact" class="btn">Get Free Review</a>
+</section>
+
+<section class="container">
+  <h2>Why Your Website Isn’t Converting</h2>
+  <ul>
+    <li>No clear call to action</li>
+    <li>No trust or reviews</li>
+    <li>Confusing layout</li>
+  </ul>
+</section>
+
+<section class="container">
+  <h2>What I Fix</h2>
+  <ul>
+    <li>Clear headlines</li>
+    <li>Strong CTA buttons</li>
+    <li>Mobile optimization</li>
+  </ul>
+</section>
+
+<div class="container">
+  <div class="card" id="contact">
+    <h2>Get Your Free Website Review</h2>
+
+    <form id="leadForm">
+      <div class="field">
+        <input type="text" placeholder="Name" required>
+      </div>
+
+      <div class="field">
+        <input type="text" placeholder="Business Name" required>
+      </div>
+
+      <div class="field">
+        <input type="email" placeholder="Email" required>
+      </div>
+
+      <div class="field">
+        <textarea placeholder="What do you want more of?"></textarea>
+      </div>
+
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<a class="floating-call" href="tel:+18650000000">Call Now</a>
+
+<script>
+document.getElementById("leadForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Form submitted. Connect this to a real backend.");
+});
+</script>
+
+</body>
+</html>
+  
