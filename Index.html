@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serenity Day Spa | Relax, Refresh, and Feel Like Yourself Again</title>
+  <meta name="description" content="Luxury facials, massage therapy, and premium day spa treatments in a calm, elegant setting. Book your appointment today." />
+
+  <style>
+    /* --- GLOBAL STYLES --- */
+    :root {
+      --bg: #faf6f0;
+      --text: #3d3129;
+      --accent: #b78a63;
+      --accent-dark: #9b7250;
+      --success: #647a60;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 { margin: 0 0 10px; }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 50px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                  url('/images/hero-spa-room.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 30px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="container">
+    <h1>Relax, Refresh, and Feel Like Yourself Again</h1>
+    <p>Luxury spa treatments designed to help you unwind, glow, and reset.</p>
+    <a href="#book" class="btn">Book Your Appointment</a>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Our Services</h2>
+
+  <div class="card">
+    <img src="/images/facial-treatment.jpg" alt="Facial">
+    <h3>Signature Facial</h3>
+    <p>Deep cleansing and glowing skin.</p>
+  </div>
+
+  <div class="card">
+    <img src="/images/massage-treatment.jpg" alt="Massage">
+    <h3>Relaxation Massage</h3>
+    <p>Relieve stress and tension instantly.</p>
+  </div>
+
+  <div class="card">
+    <img src="/images/spa-ambience.jpg" alt="Spa">
+    <h3>Luxury Atmosphere</h3>
+    <p>Calm, premium experience from start to finish.</p>
+  </div>
+</section>
+
+<section class="container">
+  <h2>What Clients Say</h2>
+
+  <div class="card">
+    <img src="/images/happy-clients.jpg" alt="Client">
+    <p>★★★★★ “Best spa experience I’ve had.”</p>
+  </div>
+</section>
+
+<section class="container" id="book">
+  <h2>Book Your Visit</h2>
+
+  <div class="card">
+    <form>
+      <input type="text" placeholder="Name" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <textarea placeholder="What do you want?"></textarea><br><br>
+      <button class="btn">Request Appointment</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  console.log("Site loaded");
+</script>
+
+</body>
+</html>
